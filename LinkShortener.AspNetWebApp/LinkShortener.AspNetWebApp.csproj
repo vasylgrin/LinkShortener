@@ -1,0 +1,66 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\react-app\src\App.css" />
+    <Content Remove="wwwroot\react-app\src\App.js" />
+    <Content Remove="wwwroot\react-app\src\App.test.js" />
+    <Content Remove="wwwroot\react-app\src\components\Authorisation\Login\LogIn.jsx" />
+    <Content Remove="wwwroot\react-app\src\components\Authorisation\SignIn\SignIn.jsx" />
+    <Content Remove="wwwroot\react-app\src\components\Header\Header.jsx" />
+    <Content Remove="wwwroot\react-app\src\components\Header\Header.module.css" />
+    <Content Remove="wwwroot\react-app\src\Configuration\ApiUrlsConfiguration.js" />
+    <Content Remove="wwwroot\react-app\src\index.css" />
+    <Content Remove="wwwroot\react-app\src\index.js" />
+    <Content Remove="wwwroot\react-app\src\logo.svg" />
+    <Content Remove="wwwroot\react-app\src\reportWebVitals.js" />
+    <Content Remove="wwwroot\react-app\src\Services\AuthorisationService.js" />
+    <Content Remove="wwwroot\react-app\src\Services\ValidationService.js" />
+    <Content Remove="wwwroot\react-app\src\setupTests.js" />
+    <Content Remove="wwwroot\react-app\src\UI\PostButton\PostButton.jsx" />
+    <Content Remove="wwwroot\react-app\src\UI\PostButton\PostButton.module.css" />
+    <Content Remove="wwwroot\react-app\src\UI\TextBox\TextBox.jsx" />
+    <Content Remove="wwwroot\react-app\src\UI\TextBox\TextBox.module.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\react-app\.babelrc" />
+    <None Include="wwwroot\react-app\src\App.css" />
+    <None Include="wwwroot\react-app\src\App.js" />
+    <None Include="wwwroot\react-app\src\App.test.js" />
+    <None Include="wwwroot\react-app\src\components\Authorisation\Login\LogIn.jsx" />
+    <None Include="wwwroot\react-app\src\components\Authorisation\SignIn\SignIn.jsx" />
+    <None Include="wwwroot\react-app\src\components\Header\Header.jsx" />
+    <None Include="wwwroot\react-app\src\components\Header\Header.module.css" />
+    <None Include="wwwroot\react-app\src\Configuration\ApiUrlsConfiguration.js" />
+    <None Include="wwwroot\react-app\src\index.css" />
+    <None Include="wwwroot\react-app\src\index.js" />
+    <None Include="wwwroot\react-app\src\logo.svg" />
+    <None Include="wwwroot\react-app\src\reportWebVitals.js" />
+    <None Include="wwwroot\react-app\src\Services\AuthorisationService.js" />
+    <None Include="wwwroot\react-app\src\Services\ValidationService.js" />
+    <None Include="wwwroot\react-app\src\setupTests.js" />
+    <None Include="wwwroot\react-app\src\UI\PostButton\PostButton.jsx" />
+    <None Include="wwwroot\react-app\src\UI\PostButton\PostButton.module.css" />
+    <None Include="wwwroot\react-app\src\UI\TextBox\TextBox.jsx" />
+    <None Include="wwwroot\react-app\src\UI\TextBox\TextBox.module.css" />
+    <None Include="wwwroot\react-app\webpack.config.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.10" />
+    <PackageReference Include="React.AspNet" Version="5.2.12" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LinkShortener.Service\LinkShortener.Service.csproj" />
+  </ItemGroup>
+
+</Project>

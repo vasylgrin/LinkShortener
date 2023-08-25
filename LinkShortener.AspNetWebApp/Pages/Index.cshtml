@@ -1,0 +1,16 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <div id="react-app-container">
+        <!-- Вбудований контейнер для React додатку -->
+    </div>
+
+    <!-- Підключення скрипту React додатку -->
+    <script type="module" src="~/react-app/dist/main.js"></script>
+</div>
